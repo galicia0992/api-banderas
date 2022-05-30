@@ -1,0 +1,258 @@
+html{
+    padding: 0%;
+    margin: 0%;
+    background-color: hsl(0, 0%, 98%);
+    
+}
+h4{
+    font-weight: 700;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+}
+.navbar{
+    width: 100%;
+}
+.descripcion{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 7%;
+}
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.square:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+.contenedorInfo{
+    width: 20%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.bandera{
+    width: 100%;
+}
+.bandera:after {
+    content: '';
+    display: block;
+  }
+.selectCountry{
+    padding: 1% 3% 1% 3%;
+    border-radius: 5px;
+}
+.contenedorInfoGde{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.banderaGde{
+    width: 40%;
+    margin-right: 5%;
+}
+.descripcionGde{
+    width: 100%;
+}
+.cajaDescripcion{
+    width: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: flex-start;
+}
+.borderCountries{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btnCountries{
+    margin-left: 5%;
+    width: 15%;
+    border-radius: 5px;
+    border-style: none;
+}
+.btnBack{
+    border-radius: 5px;
+    padding: 0 2% 0 2%;
+    position: absolute;
+    left: 10%;
+    top: 15%
+}
+.bc{
+    margin: 0;
+}
+
+
+//spinner
+.sk-folding-cube {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+  }
+  
+  .sk-folding-cube .sk-cube {
+    float: left;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); 
+  }
+  .sk-folding-cube .sk-cube:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+  }
+  .sk-folding-cube .sk-cube2 {
+    -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+  }
+  .sk-folding-cube .sk-cube3 {
+    -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+  }
+  .sk-folding-cube .sk-cube4 {
+    -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+  }
+  .sk-folding-cube .sk-cube2:before {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .sk-folding-cube .sk-cube3:before {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s; 
+  }
+  .sk-folding-cube .sk-cube4:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  @-webkit-keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    } 
+  }
+  
+  @keyframes sk-foldCubeAngle {
+    0%, 10% {
+      -webkit-transform: perspective(140px) rotateX(-180deg);
+              transform: perspective(140px) rotateX(-180deg);
+      opacity: 0; 
+    } 25%, 75% {
+      -webkit-transform: perspective(140px) rotateX(0deg);
+              transform: perspective(140px) rotateX(0deg);
+      opacity: 1; 
+    } 90%, 100% {
+      -webkit-transform: perspective(140px) rotateY(180deg);
+              transform: perspective(140px) rotateY(180deg);
+      opacity: 0; 
+    }
+  }
+
+
+@media (max-width: 778px) { 
+    section{
+        margin-top: 10%;
+    }
+    .opciones{
+        width: 100%;
+        display: flex;
+        position: absolute;
+        transform: translate(5%, 20%);
+    }
+    .wrap{
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contenedorInfo{
+        width: 70%;
+        height: 350px;
+        margin-top: 5%;
+    }
+    .contenedorInfoGde{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .descripcionGde{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .cajaDescripcion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .banderaGde{
+        width: 100%;
+        margin-right: 5%;
+    }
+    .borderCountries{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .btnCountries{
+        margin-left: 5%;
+        margin-top: 5%;
+        width: 15%;
+        border-radius: 5px;
+        border-style: none;
+    }
+    html, html body, body #wrapper {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: none !important;
+        overflow-x: hidden;
+    }
+ }
+
+
+ 
